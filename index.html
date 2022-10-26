@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #000;
+            text-align: center;
+            font-family: 'Sora', sans-serif;
+        }
+        .container {
+            width: 50%;
+            height: 250px;
+            margin: auto;
+            color: #fff;
+            margin-top: 30px;
+            background: purple;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        form {
+            padding: 20px;
+        }
+        input {
+            padding: 10px;
+            /* border: none; */
+        }
+        button {
+            padding: 3px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        button:hover {
+            background: pink;
+            border: none;
+        }
+        @media (max-width: 375px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Details</h1>
+        <form action="/" method="post">
+            <label for="cityname">City Name:</label>
+            <input id="city_Name" type="text" name="cityName">
+            <button type="submit" name="submit">Go</button>
+        </form>
+
+    </div>
+   
+</body>
+</html>
