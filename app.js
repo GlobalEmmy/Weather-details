@@ -1,4 +1,4 @@
-const { response } = require("express");
+// const { response } = require("express");
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
@@ -15,7 +15,7 @@ app.post("/", (req, res) => {
   const query_1 = query.slice(0, 1).toUpperCase()
   const query_2 = query.slice(1, query.length).toLowerCase()
   const queryDisplay = `${query_1}${query_2}`
-  const apiKey = "9dc5ada676e4657d506f290ad4610e78";
+  const apiKey = "";
   const units = "metric";
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}&units=${units}`;
